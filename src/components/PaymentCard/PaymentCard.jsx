@@ -12,12 +12,7 @@ export default function PaymentCard({
     isPaid,
   },
 }) {
-  console.log(
-    clsx("text", {
-      [css.isPaid]: isPaid,
-      [css.isPending]: !isPaid,
-    })
-  );
+  clsx(css.text, isPaid ? css.isPaid : css.isPending);
 
   const statusClassNames = clsx(css.text, isPaid ? css.isPaid : css.isPending);
 
