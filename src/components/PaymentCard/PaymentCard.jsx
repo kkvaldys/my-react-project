@@ -12,8 +12,6 @@ export default function PaymentCard({
     isPaid,
   },
 }) {
-  clsx(css.text, isPaid ? css.isPaid : css.isPending);
-
   const statusClassNames = clsx(css.text, isPaid ? css.isPaid : css.isPending);
 
   return (
